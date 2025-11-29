@@ -1,0 +1,4 @@
+#!/bin/sh
+/usr/bin/geoipupdate
+/usr/local/bin/xt_geoip_build_maxmind -4 -c /var/lib/GeoIP/GeoLite2-Country.mmdb -o /usr/share/xt_geoip
+/usr/sbin/iptables-restore < /etc/iptables/rules.v4
